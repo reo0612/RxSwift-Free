@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		830EC3D2267739D9003D56F9 /* DriverViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830EC3D1267739D9003D56F9 /* DriverViewModel.swift */; };
 		830EC3DB26774B2E003D56F9 /* NSObject-Rx in Frameworks */ = {isa = PBXBuildFile; productRef = 830EC3DA26774B2E003D56F9 /* NSObject-Rx */; };
 		835397472669F67B001D995E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835397462669F67B001D995E /* AppDelegate.swift */; };
 		8353974B2669F67B001D995E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8353974A2669F67B001D995E /* MainViewController.swift */; };
@@ -50,6 +51,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		830EC3D1267739D9003D56F9 /* DriverViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DriverViewModel.swift; sourceTree = "<group>"; };
 		835397432669F67B001D995E /* RxSwift-Free.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RxSwift-Free.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		835397462669F67B001D995E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8353974A2669F67B001D995E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +108,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		830EC3D3267739E6003D56F9 /* Driver */ = {
+			isa = PBXGroup;
+			children = (
+				830EC3D1267739D9003D56F9 /* DriverViewModel.swift */,
+			);
+			name = Driver;
+			sourceTree = "<group>";
+		};
 		8353973A2669F67B001D995E = {
 			isa = PBXGroup;
 			children = (
@@ -165,6 +175,7 @@
 		835397A8267047E9001D995E /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				830EC3D3267739E6003D56F9 /* Driver */,
 				839C9F6526732E9B00D7891E /* Relay */,
 				839C9F6426732E9100D7891E /* Subject */,
 			);
@@ -432,6 +443,7 @@
 				8353974B2669F67B001D995E /* MainViewController.swift in Sources */,
 				835397AF26704831001D995E /* Router.swift in Sources */,
 				835397B326704CA8001D995E /* ColdHotViewController.swift in Sources */,
+				830EC3D2267739D9003D56F9 /* DriverViewModel.swift in Sources */,
 				839C9F6A26733C0C00D7891E /* DriverViewController.swift in Sources */,
 				835397472669F67B001D995E /* AppDelegate.swift in Sources */,
 				839C9F6726732EAA00D7891E /* RelayViewModel.swift in Sources */,
