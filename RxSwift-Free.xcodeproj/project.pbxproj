@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		830EC3D2267739D9003D56F9 /* DriverViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830EC3D1267739D9003D56F9 /* DriverViewModel.swift */; };
+		830EC3DB26774B2E003D56F9 /* NSObject-Rx in Frameworks */ = {isa = PBXBuildFile; productRef = 830EC3DA26774B2E003D56F9 /* NSObject-Rx */; };
 		835397472669F67B001D995E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835397462669F67B001D995E /* AppDelegate.swift */; };
 		8353974B2669F67B001D995E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8353974A2669F67B001D995E /* MainViewController.swift */; };
 		8353974E2669F67B001D995E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8353974C2669F67B001D995E /* Main.storyboard */; };
@@ -49,6 +51,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		830EC3D1267739D9003D56F9 /* DriverViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DriverViewModel.swift; sourceTree = "<group>"; };
 		835397432669F67B001D995E /* RxSwift-Free.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RxSwift-Free.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		835397462669F67B001D995E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8353974A2669F67B001D995E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -83,6 +86,7 @@
 			files = (
 				83F3D13A26704F73007FB107 /* RxSwift in Frameworks */,
 				83F3D13826704F73007FB107 /* RxCocoa in Frameworks */,
+				830EC3DB26774B2E003D56F9 /* NSObject-Rx in Frameworks */,
 				83F3D13D26708EEC007FB107 /* RxOptional in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -104,6 +108,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		830EC3D3267739E6003D56F9 /* Driver */ = {
+			isa = PBXGroup;
+			children = (
+				830EC3D1267739D9003D56F9 /* DriverViewModel.swift */,
+			);
+			name = Driver;
+			sourceTree = "<group>";
+		};
 		8353973A2669F67B001D995E = {
 			isa = PBXGroup;
 			children = (
@@ -163,6 +175,7 @@
 		835397A8267047E9001D995E /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				830EC3D3267739E6003D56F9 /* Driver */,
 				839C9F6526732E9B00D7891E /* Relay */,
 				839C9F6426732E9100D7891E /* Subject */,
 			);
@@ -299,6 +312,7 @@
 				83F3D13726704F73007FB107 /* RxCocoa */,
 				83F3D13926704F73007FB107 /* RxSwift */,
 				83F3D13C26708EEC007FB107 /* RxOptional */,
+				830EC3DA26774B2E003D56F9 /* NSObject-Rx */,
 			);
 			productName = "RxSwift-Free";
 			productReference = 835397432669F67B001D995E /* RxSwift-Free.app */;
@@ -374,6 +388,7 @@
 			packageReferences = (
 				83F3D13626704F73007FB107 /* XCRemoteSwiftPackageReference "RxSwift" */,
 				83F3D13B26708EEC007FB107 /* XCRemoteSwiftPackageReference "RxOptional" */,
+				830EC3D926774B2E003D56F9 /* XCRemoteSwiftPackageReference "NSObject-Rx" */,
 			);
 			productRefGroup = 835397442669F67B001D995E /* Products */;
 			projectDirPath = "";
@@ -428,6 +443,7 @@
 				8353974B2669F67B001D995E /* MainViewController.swift in Sources */,
 				835397AF26704831001D995E /* Router.swift in Sources */,
 				835397B326704CA8001D995E /* ColdHotViewController.swift in Sources */,
+				830EC3D2267739D9003D56F9 /* DriverViewModel.swift in Sources */,
 				839C9F6A26733C0C00D7891E /* DriverViewController.swift in Sources */,
 				835397472669F67B001D995E /* AppDelegate.swift in Sources */,
 				839C9F6726732EAA00D7891E /* RelayViewModel.swift in Sources */,
@@ -766,6 +782,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		830EC3D926774B2E003D56F9 /* XCRemoteSwiftPackageReference "NSObject-Rx" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RxSwiftCommunity/NSObject-Rx.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.2.1;
+			};
+		};
 		83F3D13626704F73007FB107 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
@@ -785,6 +809,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		830EC3DA26774B2E003D56F9 /* NSObject-Rx */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 830EC3D926774B2E003D56F9 /* XCRemoteSwiftPackageReference "NSObject-Rx" */;
+			productName = "NSObject-Rx";
+		};
 		83F3D13726704F73007FB107 /* RxCocoa */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 83F3D13626704F73007FB107 /* XCRemoteSwiftPackageReference "RxSwift" */;

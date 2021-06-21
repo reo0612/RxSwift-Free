@@ -23,4 +23,9 @@ final class Router {
         let relay = UIStoryboard(name: "Relay", bundle: nil).instantiateInitialViewController() as! RelayViewController
         vc.navigationController?.pushViewController(relay, animated: true)
     }
+    
+    static func showDriver(vc: UIViewController) {
+        let driver = UIStoryboard(name: "Driver", bundle: nil).instantiateInitialViewController() as! DriverViewController
+        vc.navigationController?.pushViewController(driver, animated: true)
+    }
 }

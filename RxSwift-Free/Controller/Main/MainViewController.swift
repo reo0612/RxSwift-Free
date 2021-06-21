@@ -21,7 +21,7 @@ final class MainViewController: UIViewController {
     }
     
     @IBAction private func showDriver(_ sender: UIButton) {
-        
+        Router.showDriver(vc: self)
     }
 }
 
