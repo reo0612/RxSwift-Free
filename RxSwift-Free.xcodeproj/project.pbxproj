@@ -10,6 +10,7 @@
 		830EC3D2267739D9003D56F9 /* DriverViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830EC3D1267739D9003D56F9 /* DriverViewModel.swift */; };
 		830EC3DB26774B2E003D56F9 /* NSObject-Rx in Frameworks */ = {isa = PBXBuildFile; productRef = 830EC3DA26774B2E003D56F9 /* NSObject-Rx */; };
 		830EC3DE268055B8003D56F9 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 830EC3DD268055B8003D56F9 /* Alamofire */; };
+		830EC3E0268055D7003D56F9 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830EC3DF268055D7003D56F9 /* API.swift */; };
 		835397472669F67B001D995E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835397462669F67B001D995E /* AppDelegate.swift */; };
 		8353974B2669F67B001D995E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8353974A2669F67B001D995E /* MainViewController.swift */; };
 		8353974E2669F67B001D995E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8353974C2669F67B001D995E /* Main.storyboard */; };
@@ -53,6 +54,7 @@
 
 /* Begin PBXFileReference section */
 		830EC3D1267739D9003D56F9 /* DriverViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DriverViewModel.swift; sourceTree = "<group>"; };
+		830EC3DF268055D7003D56F9 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		835397432669F67B001D995E /* RxSwift-Free.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RxSwift-Free.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		835397462669F67B001D995E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8353974A2669F67B001D995E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -221,6 +223,7 @@
 		835397AD2670480D001D995E /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				830EC3DF268055D7003D56F9 /* API.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -451,6 +454,7 @@
 				839C9F6A26733C0C00D7891E /* DriverViewController.swift in Sources */,
 				835397472669F67B001D995E /* AppDelegate.swift in Sources */,
 				839C9F6726732EAA00D7891E /* RelayViewModel.swift in Sources */,
+				830EC3E0268055D7003D56F9 /* API.swift in Sources */,
 				839C9F5B267318EF00D7891E /* SubjectViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
