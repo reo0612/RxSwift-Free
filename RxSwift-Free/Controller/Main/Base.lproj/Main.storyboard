@@ -47,6 +47,13 @@
                                             <action selector="showDriver:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UMD-Xq-nGV"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Io-Is-d7N">
+                                        <rect key="frame" x="0.0" y="120" width="57" height="30"/>
+                                        <state key="normal" title="Single"/>
+                                        <connections>
+                                            <action selector="showSingle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rZl-8M-ohY"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </stackView>
                         </subviews>

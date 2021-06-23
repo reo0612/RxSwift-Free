@@ -23,5 +23,9 @@ final class MainViewController: UIViewController {
     @IBAction private func showDriver(_ sender: UIButton) {
         Router.showDriver(vc: self)
     }
+    
+    @IBAction private func showSingle(_ sender: UIButton) {
+        Router.showSingle(vc: self)
+    }
 }
 
