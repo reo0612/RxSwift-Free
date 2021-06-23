@@ -9,6 +9,14 @@
 /* Begin PBXBuildFile section */
 		830EC3D2267739D9003D56F9 /* DriverViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830EC3D1267739D9003D56F9 /* DriverViewModel.swift */; };
 		830EC3DB26774B2E003D56F9 /* NSObject-Rx in Frameworks */ = {isa = PBXBuildFile; productRef = 830EC3DA26774B2E003D56F9 /* NSObject-Rx */; };
+		830EC3DE268055B8003D56F9 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 830EC3DD268055B8003D56F9 /* Alamofire */; };
+		830EC3E0268055D7003D56F9 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830EC3DF268055D7003D56F9 /* API.swift */; };
+		830EC3E3268056D0003D56F9 /* SingleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830EC3E2268056D0003D56F9 /* SingleViewController.swift */; };
+		830EC3E5268056D8003D56F9 /* Single.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 830EC3E4268056D8003D56F9 /* Single.storyboard */; };
+		830EC3E726805862003D56F9 /* GithubModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830EC3E626805862003D56F9 /* GithubModel.swift */; };
+		830EC3EA26805FBE003D56F9 /* SingleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830EC3E926805FBE003D56F9 /* SingleViewModel.swift */; };
+		83443A2D2682BFFF002802AA /* SingleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83443A2B2682BFFF002802AA /* SingleTableViewCell.swift */; };
+		83443A2E2682BFFF002802AA /* SingleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83443A2C2682BFFF002802AA /* SingleTableViewCell.xib */; };
 		835397472669F67B001D995E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835397462669F67B001D995E /* AppDelegate.swift */; };
 		8353974B2669F67B001D995E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8353974A2669F67B001D995E /* MainViewController.swift */; };
 		8353974E2669F67B001D995E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8353974C2669F67B001D995E /* Main.storyboard */; };
@@ -52,6 +60,13 @@
 
 /* Begin PBXFileReference section */
 		830EC3D1267739D9003D56F9 /* DriverViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DriverViewModel.swift; sourceTree = "<group>"; };
+		830EC3DF268055D7003D56F9 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		830EC3E2268056D0003D56F9 /* SingleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleViewController.swift; sourceTree = "<group>"; };
+		830EC3E4268056D8003D56F9 /* Single.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Single.storyboard; sourceTree = "<group>"; };
+		830EC3E626805862003D56F9 /* GithubModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubModel.swift; sourceTree = "<group>"; };
+		830EC3E926805FBE003D56F9 /* SingleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleViewModel.swift; sourceTree = "<group>"; };
+		83443A2B2682BFFF002802AA /* SingleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleTableViewCell.swift; sourceTree = "<group>"; };
+		83443A2C2682BFFF002802AA /* SingleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SingleTableViewCell.xib; sourceTree = "<group>"; };
 		835397432669F67B001D995E /* RxSwift-Free.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RxSwift-Free.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		835397462669F67B001D995E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8353974A2669F67B001D995E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -84,6 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				830EC3DE268055B8003D56F9 /* Alamofire in Frameworks */,
 				83F3D13A26704F73007FB107 /* RxSwift in Frameworks */,
 				83F3D13826704F73007FB107 /* RxCocoa in Frameworks */,
 				830EC3DB26774B2E003D56F9 /* NSObject-Rx in Frameworks */,
@@ -114,6 +130,23 @@
 				830EC3D1267739D9003D56F9 /* DriverViewModel.swift */,
 			);
 			name = Driver;
+			sourceTree = "<group>";
+		};
+		830EC3E1268056BC003D56F9 /* Single */ = {
+			isa = PBXGroup;
+			children = (
+				830EC3E2268056D0003D56F9 /* SingleViewController.swift */,
+				830EC3E4268056D8003D56F9 /* Single.storyboard */,
+			);
+			path = Single;
+			sourceTree = "<group>";
+		};
+		830EC3E826805FAF003D56F9 /* Single */ = {
+			isa = PBXGroup;
+			children = (
+				830EC3E926805FBE003D56F9 /* SingleViewModel.swift */,
+			);
+			path = Single;
 			sourceTree = "<group>";
 		};
 		8353973A2669F67B001D995E = {
@@ -175,6 +208,7 @@
 		835397A8267047E9001D995E /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				830EC3E826805FAF003D56F9 /* Single */,
 				830EC3D3267739E6003D56F9 /* Driver */,
 				839C9F6526732E9B00D7891E /* Relay */,
 				839C9F6426732E9100D7891E /* Subject */,
@@ -185,6 +219,8 @@
 		835397A9267047F2001D995E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				83443A2B2682BFFF002802AA /* SingleTableViewCell.swift */,
+				83443A2C2682BFFF002802AA /* SingleTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -192,6 +228,7 @@
 		835397AA267047FA001D995E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				830EC3E1268056BC003D56F9 /* Single */,
 				839C9F6826733B1A00D7891E /* Driver */,
 				839C9F5F26732D7700D7891E /* Relay */,
 				839C9F552673104700D7891E /* Subject */,
@@ -204,6 +241,7 @@
 		835397AB26704802001D995E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				830EC3E626805862003D56F9 /* GithubModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -219,6 +257,7 @@
 		835397AD2670480D001D995E /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				830EC3DF268055D7003D56F9 /* API.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -313,6 +352,7 @@
 				83F3D13926704F73007FB107 /* RxSwift */,
 				83F3D13C26708EEC007FB107 /* RxOptional */,
 				830EC3DA26774B2E003D56F9 /* NSObject-Rx */,
+				830EC3DD268055B8003D56F9 /* Alamofire */,
 			);
 			productName = "RxSwift-Free";
 			productReference = 835397432669F67B001D995E /* RxSwift-Free.app */;
@@ -389,6 +429,7 @@
 				83F3D13626704F73007FB107 /* XCRemoteSwiftPackageReference "RxSwift" */,
 				83F3D13B26708EEC007FB107 /* XCRemoteSwiftPackageReference "RxOptional" */,
 				830EC3D926774B2E003D56F9 /* XCRemoteSwiftPackageReference "NSObject-Rx" */,
+				830EC3DC268055B8003D56F9 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = 835397442669F67B001D995E /* Products */;
 			projectDirPath = "";
@@ -408,10 +449,12 @@
 			files = (
 				839C9F6326732DB400D7891E /* Relay.storyboard in Resources */,
 				835397532669F67E001D995E /* LaunchScreen.storyboard in Resources */,
+				830EC3E5268056D8003D56F9 /* Single.storyboard in Resources */,
 				835397502669F67E001D995E /* Assets.xcassets in Resources */,
 				839C9F6C26733C1500D7891E /* Driver.storyboard in Resources */,
 				835397B526704CB1001D995E /* ColdHot.storyboard in Resources */,
 				8353974E2669F67B001D995E /* Main.storyboard in Resources */,
+				83443A2E2682BFFF002802AA /* SingleTableViewCell.xib in Resources */,
 				839C9F592673107500D7891E /* Subject.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -440,13 +483,18 @@
 				839C9F6126732D9F00D7891E /* RelayViewController.swift in Sources */,
 				839C9F5E26731B0400D7891E /* UIViewController+.swift in Sources */,
 				839C9F572673105B00D7891E /* SubjectViewController.swift in Sources */,
+				830EC3E3268056D0003D56F9 /* SingleViewController.swift in Sources */,
+				830EC3E726805862003D56F9 /* GithubModel.swift in Sources */,
 				8353974B2669F67B001D995E /* MainViewController.swift in Sources */,
 				835397AF26704831001D995E /* Router.swift in Sources */,
 				835397B326704CA8001D995E /* ColdHotViewController.swift in Sources */,
 				830EC3D2267739D9003D56F9 /* DriverViewModel.swift in Sources */,
+				83443A2D2682BFFF002802AA /* SingleTableViewCell.swift in Sources */,
 				839C9F6A26733C0C00D7891E /* DriverViewController.swift in Sources */,
 				835397472669F67B001D995E /* AppDelegate.swift in Sources */,
+				830EC3EA26805FBE003D56F9 /* SingleViewModel.swift in Sources */,
 				839C9F6726732EAA00D7891E /* RelayViewModel.swift in Sources */,
+				830EC3E0268055D7003D56F9 /* API.swift in Sources */,
 				839C9F5B267318EF00D7891E /* SubjectViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -790,6 +838,14 @@
 				minimumVersion = 5.2.1;
 			};
 		};
+		830EC3DC268055B8003D56F9 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.3;
+			};
+		};
 		83F3D13626704F73007FB107 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
@@ -813,6 +869,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 830EC3D926774B2E003D56F9 /* XCRemoteSwiftPackageReference "NSObject-Rx" */;
 			productName = "NSObject-Rx";
+		};
+		830EC3DD268055B8003D56F9 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 830EC3DC268055B8003D56F9 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
 		};
 		83F3D13726704F73007FB107 /* RxCocoa */ = {
 			isa = XCSwiftPackageProductDependency;
