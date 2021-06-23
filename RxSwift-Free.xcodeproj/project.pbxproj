@@ -15,6 +15,8 @@
 		830EC3E5268056D8003D56F9 /* Single.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 830EC3E4268056D8003D56F9 /* Single.storyboard */; };
 		830EC3E726805862003D56F9 /* GithubModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830EC3E626805862003D56F9 /* GithubModel.swift */; };
 		830EC3EA26805FBE003D56F9 /* SingleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830EC3E926805FBE003D56F9 /* SingleViewModel.swift */; };
+		83443A2D2682BFFF002802AA /* SingleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83443A2B2682BFFF002802AA /* SingleTableViewCell.swift */; };
+		83443A2E2682BFFF002802AA /* SingleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83443A2C2682BFFF002802AA /* SingleTableViewCell.xib */; };
 		835397472669F67B001D995E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835397462669F67B001D995E /* AppDelegate.swift */; };
 		8353974B2669F67B001D995E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8353974A2669F67B001D995E /* MainViewController.swift */; };
 		8353974E2669F67B001D995E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8353974C2669F67B001D995E /* Main.storyboard */; };
@@ -63,6 +65,8 @@
 		830EC3E4268056D8003D56F9 /* Single.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Single.storyboard; sourceTree = "<group>"; };
 		830EC3E626805862003D56F9 /* GithubModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubModel.swift; sourceTree = "<group>"; };
 		830EC3E926805FBE003D56F9 /* SingleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleViewModel.swift; sourceTree = "<group>"; };
+		83443A2B2682BFFF002802AA /* SingleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleTableViewCell.swift; sourceTree = "<group>"; };
+		83443A2C2682BFFF002802AA /* SingleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SingleTableViewCell.xib; sourceTree = "<group>"; };
 		835397432669F67B001D995E /* RxSwift-Free.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RxSwift-Free.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		835397462669F67B001D995E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8353974A2669F67B001D995E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -215,6 +219,8 @@
 		835397A9267047F2001D995E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				83443A2B2682BFFF002802AA /* SingleTableViewCell.swift */,
+				83443A2C2682BFFF002802AA /* SingleTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -448,6 +454,7 @@
 				839C9F6C26733C1500D7891E /* Driver.storyboard in Resources */,
 				835397B526704CB1001D995E /* ColdHot.storyboard in Resources */,
 				8353974E2669F67B001D995E /* Main.storyboard in Resources */,
+				83443A2E2682BFFF002802AA /* SingleTableViewCell.xib in Resources */,
 				839C9F592673107500D7891E /* Subject.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -482,6 +489,7 @@
 				835397AF26704831001D995E /* Router.swift in Sources */,
 				835397B326704CA8001D995E /* ColdHotViewController.swift in Sources */,
 				830EC3D2267739D9003D56F9 /* DriverViewModel.swift in Sources */,
+				83443A2D2682BFFF002802AA /* SingleTableViewCell.swift in Sources */,
 				839C9F6A26733C0C00D7891E /* DriverViewController.swift in Sources */,
 				835397472669F67B001D995E /* AppDelegate.swift in Sources */,
 				830EC3EA26805FBE003D56F9 /* SingleViewModel.swift in Sources */,
