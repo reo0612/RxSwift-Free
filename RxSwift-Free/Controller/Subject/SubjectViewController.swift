@@ -23,6 +23,7 @@ final class SubjectViewController: UIViewController {
     
     // Observerを準拠していない
     private var replaySubject = ReplaySubject<String>.create(bufferSize: 2) // subscribe時にbufferSize分、過去のeventを受け取れる
+    private var allReplaySubject = ReplaySubject<String>.createUnbounded() // subscribe時に、過去の全てのイベントが受け取れる
     
     // 続きはViewModelにて
     private var viewModel = SubjectViewModel()
@@ -34,7 +35,8 @@ final class SubjectViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         //bind()
-        doReplaySubject()
+        //doReplaySubject()
+        doAllReplaySubject()
     }
     
     func bind() {
@@ -89,6 +91,40 @@ final class SubjectViewController: UIViewController {
         // 1 next(event2)
         // 2 next(event1) 過去のイベントを受け取っている！
         // 2 next(event2)
+    }
+
+    // ReplaySubject<>.createUnbounded()の動き
+    func doAllReplaySubject() {
+        allReplaySubject
+            .onNext("event1")
+        
+        allReplaySubject
+            .subscribe { event in
+                print("1 \(event)")
+                
+            }.disposed(by: disposeBag)
+
+        allReplaySubject
+            .onNext("event2")
+        
+        allReplaySubject
+            .onNext("event3")
+        
+        allReplaySubject
+            .subscribe { event in
+                print("2 \(event)")
+                
+            }.disposed(by: disposeBag)
+        
+        // ReplaySubjectのcreateUnbounded()は過去の全てのイベントが受け取れる
+        
+        // 出力結果
+        // 1 next(event1)
+        // 1 next(event2)
+        // 1 next(event3)
+        // 2 next(event1)
+        // 2 next(event2)
+        // 2 next(event3)
     }
     
 }
