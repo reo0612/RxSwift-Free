@@ -4,10 +4,10 @@ import RxSwift
 import RxCocoa
 import RxOptional
 
-// Subjectの例
+// ***** Subject *****
 
 // Subjectはイベントを受け取ることもできるし、イベントを発生させることもできる
-// Observableでもあり、Observerでもある
+// Observableでもあり、Observerでもある(例外もある)
 // つまり、イベントの検知及び発生が可能なObservableの派生である
 
 // 元のObservable同様３つのイベントを流せる(onNext, onError, onCompleted)
@@ -16,9 +16,12 @@ final class SubjectViewController: UIViewController {
     
     @IBOutlet weak private var label: UILabel!
     @IBOutlet weak private var `switch`: UISwitch!
-    // 2種類ある
-    //private var publishSubject = PublishSubject<String>() // 初期値を持たない
-    //private var behaviorSubject = BehaviorSubject<Bool>(value: false) // 初期値を持つ
+    
+    // Observable・Observerを準拠している
+    private var publishSubject = PublishSubject<String>() // 初期値を持たない
+    private var behaviorSubject = BehaviorSubject<Bool>(value: false) // 初期値を持つ
+    
+    // Observerを準拠していない
     private var replaySubject = ReplaySubject<String>.create(bufferSize: 2) // subscribe時にbufferSize分、過去のeventを受け取れる
     
     // 続きはViewModelにて
