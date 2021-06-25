@@ -19,6 +19,7 @@ final class SubjectViewController: UIViewController {
     // 2種類ある
     //private var publishSubject = PublishSubject<String>() // 初期値を持たない
     //private var behaviorSubject = BehaviorSubject<Bool>(value: false) // 初期値を持つ
+    private var replaySubject = ReplaySubject<String>.create(bufferSize: 2) // subscribe時にbufferSize分、過去のeventを受け取れる
     
     // 続きはViewModelにて
     private var viewModel = SubjectViewModel()
@@ -29,7 +30,8 @@ final class SubjectViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        bind()
+        //bind()
+        doReplaySubject()
     }
     
     func bind() {
@@ -51,6 +53,39 @@ final class SubjectViewController: UIViewController {
             self?.label.text = isOn ? "true": "false"
             
         }.disposed(by: disposeBag)
+    }
+    
+    // ReplaySubjectの動き
+    func doReplaySubject() {
+        // nextイベントを流す
+        replaySubject
+            .onNext("event1")
+        
+        // subscribeし、出力する
+        replaySubject
+            .subscribe { event in
+                print("1 \(event)")
+                
+            }.disposed(by: disposeBag)
+
+        // 再度、nextイベントを流す
+        // subscribe時に出力するようにしているのでこのイベントも出力される
+        replaySubject
+            .onNext("event2")
+        
+        // 新たにsubscribeした時
+        // 指定したbufferSize分、過去のイベントが受け取れる
+        replaySubject
+            .subscribe { event in
+                print("2 \(event)")
+                
+            }.disposed(by: disposeBag)
+        
+        // 出力結果
+        // 1 next(event1)
+        // 1 next(event2)
+        // 2 next(event1) 過去のイベントを受け取っている！
+        // 2 next(event2)
     }
     
 }
